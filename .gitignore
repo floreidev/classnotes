@@ -1,0 +1,9 @@
+node_modules
+*.debug
+*.local
+*.debug.*
+*.local.*
+.env
+*.env
+package-lock.json
+dist/
