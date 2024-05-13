@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo No tests available",
     "dev": "npx nodemon --exec \"npm run start\"",
-    "start": "npx tsc && copyfiles -u 1 -e \"**/*.ts\" src/**/* dist/ && node ./bin/www"
+    "start": "npx tsc && copyfiles -u 1 -e \"**/*.ts\" src/**/* dist/ && node ./bin/www",
+    "compiled": "node ./bin/www",
+    "compile": "npx tsc && copyfiles -u 1 -e \"**/*.ts\" src/**/* dist/ "
   },
   "repository": {
     "type": "git",
