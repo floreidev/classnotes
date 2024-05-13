@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "florei",
-  "license": "copyleft-next-0.3.0",
+  "license": "gpl-3.0",
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/cookie-parser": "^1.4.6",
