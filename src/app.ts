@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-    secret: process.env.SECRET || "-- im going to piss and shit and fart all over the place -- this is a threat. a massive threat. fuck you.",
+    secret: process.env.SECRET || "%&dfcsdfsdfafaijsajioOIJISODFj()*()jNDnas&(nANSD867DANMHd#a'[;/.,as[]al r[pk'k#a",
     resave: true,
     saveUninitialized: true
 }))
