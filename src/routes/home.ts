@@ -3,7 +3,8 @@ import express from 'express';
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("index", {isLoggedIn: req.isAuthenticated()})
+    if (req.isUnauthenticated()) return res.redirect("/signup")
+    res.render("home", {user: req.user})
 })
 
 export default router;

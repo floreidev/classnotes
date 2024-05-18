@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shared.css">
+    <link rel="stylesheet" href="/stylesheets/signup.css">
+    <link rel="icon" href="/favicon.ico" />
+    <title>Class Notes</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/donate">Donate</a>
+            <a href="/signup">Sign Up</a>
+            <a href="/login">Login</a>
+        </nav>
+        <div class="card-container">
+            <form class="card" action="/auth/register/local" method="post">
+                <div class="input-container">
+                    <h1>Sign Up</h1>
+                    <p id="message"></p>
+                </div>
+                <div class="input-container">
+                    <p>Email</p>
+                    <input type="text" name="cnEmail" id="cnEmail">
+                </div>
+                <div class="input-container">
+                    <p>Username</p>
+                    <input type="text" name="cnUsername" id="cnUsername">
+                </div>
+                <div class="input-container">
+                    <p>Password</p>
+                    <input type="password" name="cnPassword" id="cnPassword">
+                </div>
+                <div class="input-container">
+                    <p>Repeat Password</p>
+                    <input type="password" name="cnPasswordV" id="cnPasswordV">
+                </div>
+                <a href="/login">Have an account? Login!</a>
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="/default.js"></script>
+</body>
+
+</html>

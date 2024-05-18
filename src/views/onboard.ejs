@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shared.css">
+    <link rel="stylesheet" href="/stylesheets/onboard.css">
+    <link rel="icon" href="/favicon.ico" />
+    <title>Class Notes</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/donate">Donate</a>
+            <a href="/signup">Sign Up</a>
+            <a href="/login">Login</a>
+        </nav>
+        <div class="card-container">
+            <form class="card" action="/api/join" method="post">
+                <div class="input-container">
+                <h1>First, let's join a group.</h1>
+                <p>Each has a unique code that you can put here to join.</p>
+                <p id="message"></p>
+                </div> 
+                <div class="input-container">
+                    <p>Group Code</p>
+                    <input type="text" name="cnGroupCode" id="cnGroupCode">
+                </div>
+                <div class="input-container-horizontal">
+                    <button class="button button-important" style="flex: 2;" type="submit">Join Group</button>
+                    <a class="button"  style="flex: 1; text-align: center;" href="/home">Skip for Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/default.js"></script>
+</body>
+
+</html>

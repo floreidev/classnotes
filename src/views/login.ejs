@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shared.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="icon" href="/favicon.ico" />
+    <title>Class Notes</title>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/donate">Donate</a>
+            <a href="/signup">Sign Up</a>
+            <a href="/login">Login</a>
+        </nav>
+        <div class="card-container">
+            <form class="card default" action="/auth/login" method="post">
+                <div class="input-container">
+                <h1>Login</h1>
+                <p id="message"></p>
+                </div> 
+                <div class="input-container">
+                    <p>Username</p>
+                    <input type="text" name="username" id="password">
+                </div>
+                <div class="input-container">
+                    <p>Password</p>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <a href="/signup">New here? Sign up!</a>
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="/default.js"></script>
+</body>
+
+</html>

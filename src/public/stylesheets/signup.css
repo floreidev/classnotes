@@ -1,0 +1,22 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.input-container:has(#cnUsername:focus) > p::after {
+    content: "3-20 characters, a-z, 0-9, . and _";
+    margin-left: 4px;
+    color: #ccc;
+    font-style: italic;
+    font-size: medium;
+}
+
+.input-container:has(#cnPassword:focus) > p::after {
+    content: "Min. 6 characters";
+    margin-left: 4px;
+    color: #ccc;
+    font-style: italic;
+    font-size: medium;
+}
